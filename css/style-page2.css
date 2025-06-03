@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/*
+* {
+  outline: 1px solid red;
+}*/
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+/* _______導覽列 ________ */
+.navbar {
+	padding: 24px 0;
+	text-align: center;
+}
+
+.nav-links {
+	text-decoration: none;
+	display: inline-flex;
+	gap: 40px;
+	padding: 0;
+	margin: 0;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.navbar .nav-links a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* _______人物主內容區塊 ________ */
+.people-content-wrapper {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	opacity: 0;
+	animation: fadeInUp 0.8s ease-out 0s forwards;
+}
+
+.people-content-wrapper2 {
+	border-top: 1px solid #ccc;
+}
+
+.people-tags h1 {
+	font-size: 80px;
+	font-weight: 900;
+	color: #0027D5;
+}
+
+.people-tags {
+	max-width: 100%;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;/* 讓 h1 和 span 都靠左 */
+	gap: 12px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #0027D5;
+	animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.people-content-text {
+	flex: 1;
+	position: relative;
+	background-image: url('../img/Hero Section-2.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: left;
+	padding-left: 60px;
+	padding-top: 160px;
+
+}
+
+/* _______主內容區塊________ */
+.content-wrapper {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 24px;
+	align-items: center;
+	opacity: 0;
+	animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.content-banner {
+	flex: 1;/* 強制寬度佔 50% */
+}
+
+.content-banner img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+}
+
+.content-text {
+	flex: 1; 
+	animation: fadeInUp 0.8s ease-out 0.8s both;
+	
+}
+
+.content-text time {
+	display: block;
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 4px;
+}
+
+.tags {
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 12px;
+	font-size: 24px;
+	color: #0027D5;
+}
+
+.button {
+	background-color: #0027D5;
+	color: #ffffff;
+	font-size: 16px;
+	/* button字*/
+	padding: 8px 12px;
+	border-radius: 999px;
+	text-decoration: none;
+}
+
+.content-text h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.content-wrapper2 {
+	padding: 20px;
+	border-top: 1px solid #ccc;
+}
+
+.content-wrapper2-line {
+  width: 100%;
+  margin: 80px auto 0 auto;
+  border-top: 1px solid #ccc;
+}
+
+/* _______搜尋bar________ */
+
+.search-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	opacity: 0;
+	animation: fadeInUp 0.8s ease-out 0.8s forwards;
+
+}
+
+.search-box {
+	max-width: 500px;
+	height: 56px;
+	border: 1px solid #ccc;
+	border-radius: 999px;
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	background-color: #fff;
+}
+
+.search-icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+}
+
+.search-box input {
+	border: none;
+	outline: none;
+	width: 100%;
+	font-size: 24px;
+	color: #333;
+}
+
+/* _______分享文章________ */
+.article-card {
+	margin: 50px auto;
+	max-width: 1200px;
+	font-weight: 500;
+	line-height: 1.5;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 80px 24px;
+}
+
+.content-A img {
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+
+.card-content {
+	flex: 0 1 calc((100% - 48px) / 3);/* 三欄、兩個間距 24px */
+	max-width: calc((100% - 48px) / 3);
+}
+
+
+.time {
+	display: block;
+	margin: 8px 0;
+	font-size: 16px;
+	color: #666;
+}
+
+.hashtext a {
+	color: #0027D5;
+	text-decoration: none;
+	margin-right: 8px;
+	font-size: 24px;
+}
+
+.hashtext a:hover {
+	color: rgb(255, 0, 106);
+}
+
+.content-B h4 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.content-B p {
+	font-weight: 500;
+	margin-top: 10px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;/* 限制最多行字超過截掉*/
+	overflow: hidden;/* 隱藏超出的字*/
+}
+
+
+.btn {
+	display: block;
+	width: 100%;
+	max-width: 100px;
+	border: 1px solid black;
+	margin-top: 10px;
+	text-align: center;
+	padding: 10px 10px;
+	font-size: 16px;
+	color: #000000;
+	border-radius: 50px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	color: rgb(255, 255, 255);
+	background: black;
+}
+
+/* _______加動態________ */
+
+.Share-article {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 1.2s forwards;
+}
+
+/* _______分頁按鈕________ */
+.page-btn {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.page-btn-mumber {
+	list-style: none;
+	display: flex;
+	gap: 16px;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.page-btn-mumber li a,
+.page-btn-mumber li span {
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.page-btn-mumber li a.active {
+	color: blue;
+	font-weight: bold;
+}
+
+
+.social-media {
+	margin: 0 auto;
+	padding: 50px 0;
+	max-width: 1180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.email {
+	font-weight: bold;
+	font-size: 28px;
+	color: #333;
+
+}
+
+.social-platform {
+	display: flex;	/* 水平排列 */
+	gap: 16px;/* icon 間距 */
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+}
+
+.social-platform li {
+	display: inline-block;
+}
+
+.social-platform img {
+	width: 44px;
+	height: 44px;
+}
+
+.footer p {
+	margin: 0 auto;
+	font-size: 10px;
+	text-align: center;
+	margin: 20px;
+}
+
+@media(max-width: 992px) {
+
+	.content-wrapper,
+	.people-content-wrapper {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.content-banner {
+		flex: none;
+		width: 100%;
+	}
+
+	/* 改正方形 */
+	.content-banner img {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+	}
+
+	.content-text {
+		flex: none;
+		width: 100%;
+		padding: 0 24px;
+	}
+
+	.people-content-text {
+		justify-content: flex-start;
+		width: 100%;
+		padding: 0px 24px 40px 24px;
+	}
+
+	.people-tags h1 {
+		font-size: 52px;
+		font-weight: bold;
+		color: #0027D5;
+		padding-top: 40px;
+		
+	}
+
+	.content-text h2 {
+		font-size: 36px;
+		line-height: 1.5;
+	}
+
+	.content-wrapper2 {
+		margin-top: 48px;
+	}
+
+
+
+	/* _______分享文章________ */
+	.article-card {
+		flex-direction: column;
+		gap: 40px;
+		width: 90%;
+	}
+
+	.card-content {
+		flex: 0 1 100%;
+		max-width: 100%;
+	}
+
+	/* _______分頁按鈕________ */
+	.page-btn {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		padding: 20px 16px;
+		justify-content: center;
+	}
+
+	.page-btn-mumber {
+		gap: 12px;
+		justify-content: center;
+	}
+
+	.page-btn-mumber li a,
+	.page-btn-mumber li span {
+		font-size: 14px;
+		padding: 4px 6px;
+	}
+
+	/* _______________ */
+	.search-box {
+		max-width: 90%;
+		height: 56px;
+		padding: 0 px;
+	}
+
+	.search-box input {
+		font-size: 24px;
+	}
+
+	.search-icon {
+		width: 24px;
+		height: 24px;
+		margin-right: 3px;
+	}
+
+	.search-box {
+		width: 100%;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+
+	/* _______________ */
+	.social-media {
+		display: none;
+	}
+
+	.footer p {
+		font-size: 16px;
+		padding-top: 5px;
+	}
+
+	.content-wrapper2-line {
+		margin-top: 20px;
+	}
+
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);/*從下面 10px 淡入滑上來*/
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
