@@ -50,7 +50,6 @@
 	font-size: 80px;
 	font-weight: 900;
 	color: #0027D5;
-	
 }
 
 .people-tags {
@@ -64,7 +63,6 @@
 	font-weight: bold;
 	color: #0027D5;
 	animation: fadeInUp 0.8s ease-out 0.4s both;
-	
 }
 
 .people-content-text {
@@ -77,8 +75,8 @@
 	align-items: center;
 	justify-content: flex-start;
 	text-align: left;
-	padding-left: 80px;
-	padding-top: 300px;
+	padding-left: 60px;
+	padding-top: 160px;
 
 }
 
@@ -479,14 +477,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (min-width: 992px) {
-  .people-content-wrapper,.content-wrapper {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
   }
 }

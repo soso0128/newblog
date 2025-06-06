@@ -359,3 +359,12 @@ button:hover {
     transform: translateX(0);
   }
 }
+
+@media (min-width: 992px) {
+  .people-content-wrapper,.content-wrapper {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
