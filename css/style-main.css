@@ -1134,7 +1134,18 @@ form input:focus {
 
 	section .your-class::before {
 		content: "✔";
-		color: white !important; 
+		position: absolute;
+		left: 0;
+		top: -2px;
+		width: 20px;
+		height: 20px;
+		background-color: #0027D5;
+		color: white;
+		font-size: 12px;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	/* _______手機版-分享文章 ________ */
