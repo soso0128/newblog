@@ -1136,7 +1136,7 @@ form input:focus {
 
 	.case-points li::before {
 		content: "✔";
-		color: white;
+		color: white!important;
 	}
 
 	/* _______手機版-分享文章 ________ */
