@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+* {
+	outline: 1px solid red;
+}
 
 /* _______導覽列 ________ */
 .navbar {
@@ -132,8 +135,7 @@
 	font-weight: bold;
 	margin-bottom: 50px;
 	margin-top: 200px;
-	text-align: left
-	font-family: "Noto Sans TC", sans-serif;
+	text-align: left font-family: "Noto Sans TC", sans-serif;
 }
 
 /* _______專業服務與方案Ａ款-左圖 右字_______ */
@@ -268,16 +270,6 @@
 
 
 /* _______成功案例_______ */
-
-.case-title h2{
-	font-size: 60px;
-	font-family: "Noto Sans TC", sans-serif;
-	font-weight: bold;
-	text-align: left;
-	margin-top: 80px;
-	margin-bottom: 10px;
-
-}
 
 .consulting-section {
 	padding: 80px 20px;
@@ -530,7 +522,8 @@
 }
 
 .card-content {
-	flex: 0 1 calc((100% - 48px) / 3);/* 三欄、兩個間距 24px */
+	flex: 0 1 calc((100% - 48px) / 3);
+	/* 三欄、兩個間距 24px */
 	max-width: calc((100% - 48px) / 3);
 }
 
@@ -668,10 +661,8 @@ html {
 	margin: 0 auto;
 	font-size: 60px;
 	font-weight: bold;
-	margin-bottom: 50px;
 	margin-top: 100px;
-	text-align: left
-	font-family: "Noto Sans TC", sans-serif;
+	text-align: left font-family: "Noto Sans TC", sans-serif;
 }
 
 
@@ -789,8 +780,7 @@ form input:focus {
 	font-size: 60px;
 	font-weight: bold;
 	margin-bottom: 50px;
-	text-align: left
-	font-family: "Noto Sans TC", sans-serif;
+	text-align: left font-family: "Noto Sans TC", sans-serif;
 }
 
 
@@ -1043,14 +1033,14 @@ form input:focus {
 
 
 	/* _______手機版-成功案例 ________ */
-.case-title h2{
-	font-family: "Noto Sans TC", sans-serif;
-	font-weight: bold;
-	text-align: left;
-	padding-left:30px;
+	.case-title h2 {
+		font-family: "Noto Sans TC", sans-serif;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 20px;
 
-}
-		
+	}
+
 	.consulting-container {
 		flex-direction: column;
 		align-items: center;
@@ -1069,7 +1059,8 @@ form input:focus {
 		max-width: 100%;
 	}
 
-	.consulting-textbox-A,.consulting-textbox-B {
+	.consulting-textbox-A,
+	.consulting-textbox-B {
 		width: 100%;
 		height: auto;
 		margin-left: 0;
@@ -1080,13 +1071,14 @@ form input:focus {
 		margin-bottom: 24px;
 	}
 
-	
+
 
 	.consulting-line {
 		margin: 20px 0 0 20px;
 	}
 
-	.consulting-textbox-A p,.consulting-textbox-B p {
+	.consulting-textbox-A p,
+	.consulting-textbox-B p {
 		font-size: 16px;
 		line-height: 1.6;
 		padding: 20px;
@@ -1142,7 +1134,10 @@ form input:focus {
 		margin-top: 12px;
 	}
 
-
+	.case-points li::before {
+		content: "✔";
+		color: white;
+	}
 
 	/* _______手機版-分享文章 ________ */
 	.blogpost {
@@ -1290,7 +1285,7 @@ form input:focus {
 		font-size: 60px;
 		margin-bottom: 24px;
 		font-family: "Noto Sans TC", sans-serif;
-		
+
 	}
 
 	.email {
