@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-* {
-	outline: 1px solid red;
-}
+
 
 /* _______導覽列 ________ */
 .navbar {
