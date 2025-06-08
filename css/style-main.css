@@ -1132,9 +1132,9 @@ form input:focus {
 		margin-top: 12px;
 	}
 
-	.case-points li::before {
+	section .your-class::before {
 		content: "✔";
-		color: white!important;
+		color: white;
 	}
 
 	/* _______手機版-分享文章 ________ */
